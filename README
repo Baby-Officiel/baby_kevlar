@@ -1,0 +1,134 @@
+# baby-kevlar Script
+
+## English
+
+This script allows players to use a kevlar item that applies light armor when used. The script also checks if the player's armor is zero and, if so, removes the armor component.
+
+### How to Use
+
+1. Place the `baby-kevlar` script in the `resources` folder.
+2. Add `ensure baby-kevlar` to your `server.cfg`.
+3. Use the kevlar item (`kevlar1`) in the game. The first use will apply light armor, and the second use will remove the armor.
+
+### Armor Types
+
+There are multiple types of armor. If you want to add more types of armor, follow the provided example and modify the code accordingly.
+
+### Script Functionality
+
+- The script checks if the player already has armor.
+- If the armor is at zero, it removes the armor component from the player.
+
+### Modifying the Ped Component Variation
+
+The line `SetPedComponentVariation(PlayerPedId(), 9, 75, 1, 0)` changes the player's armor appearance. Here is what each parameter means:
+
+- `PlayerPedId()`: The player's Ped ID.
+- `9`: The component ID for armor.
+- `75`: The drawable ID.
+- `1`: The texture ID.
+- `0`: The palette ID.
+
+To change the appearance, you can modify the drawable, texture, and palette IDs according to your needs. For example, to change the armor to a different style, you might use different values for these parameters.
+
+### Compatibility
+
+This script is compatible with ESX and supports ox-inventory and qs inventory.
+
+## Français
+
+Ce script permet aux joueurs d'utiliser un objet kevlar qui applique une armure légère lorsqu'il est utilisé. Le script vérifie également si l'armure du joueur est à zéro et, dans ce cas, il enlève le composant de l'armure.
+
+### Comment Utiliser
+
+1. Placez le script `baby-kevlar` dans le dossier `resources`.
+2. Mettez `ensure baby-kevlar` dans votre `server.cfg`.
+3. Utilisez l'objet kevlar (`kevlar1`) dans le jeu. La première utilisation appliquera une armure légère et la deuxième utilisation retirera l'armure.
+
+### Types d'Armure
+
+Il existe plusieurs types d'armure. Si vous souhaitez ajouter plus de types d'armure, suivez l'exemple fourni et modifiez le code en conséquence.
+
+### Fonctionnalité du Script
+
+- Le script vérifie si le joueur a déjà une armure.
+- Si l'armure est à zéro, il enlève le composant de l'armure du joueur.
+
+### Modifier la Variation du Composant du Ped
+
+La ligne `SetPedComponentVariation(PlayerPedId(), 9, 75, 1, 0)` change l'apparence de l'armure du joueur. Voici ce que signifie chaque paramètre :
+
+- `PlayerPedId()`: L'ID du Ped du joueur.
+- `9`: L'ID du composant pour l'armure.
+- `75`: L'ID du drawable.
+- `1`: L'ID de la texture.
+- `0`: L'ID de la palette.
+
+Pour changer l'apparence, vous pouvez modifier les IDs du drawable, de la texture et de la palette selon vos besoins. Par exemple, pour changer l'armure à un style différent, vous pouvez utiliser des valeurs différentes pour ces paramètres.
+
+### Compatibilité
+
+Ce script est compatible avec ESX et prend en charge ox-inventory et qs inventory.
+
+ 
+ item qs-inventory
+ ['kevlar1'] = {
+        ['name'] = 'kevlar1',
+        ['label'] = 'Armure Légere',
+        ['weight'] = 5000,
+        ['type'] = 'item',
+        ['image'] = 'armor.png',
+        ['unique'] = false,
+        ['useable'] = true,
+        ['shouldClose'] = true,
+        ['combinable'] = nil,
+        ['description'] = 'Un peu de protection ne fait pas de mal... non ?'
+    },
+    ['kevlar2'] = {
+        ['name'] = 'kevlar2',
+        ['label'] = 'Armure normal',
+        ['weight'] = 5000,
+        ['type'] = 'item',
+        ['image'] = 'armor.png',
+        ['unique'] = false,
+        ['useable'] = true,
+        ['shouldClose'] = true,
+        ['combinable'] = nil,
+        ['description'] = 'Un peu de protection ne fait pas de mal... non ?'
+    },
+    ['kevlar3'] = {
+        ['name'] = 'kevlar3',
+        ['label'] = 'Armure EMS',
+        ['weight'] = 5000,
+        ['type'] = 'item',
+        ['image'] = 'armor_ems.png',
+        ['unique'] = false,
+        ['useable'] = true,
+        ['shouldClose'] = true,
+        ['combinable'] = nil,
+        ['description'] = 'Un peu de protection ne fait pas de mal... non ?'
+    },
+    ['kevlar4'] = {
+        ['name'] = 'kevlar4',
+        ['label'] = 'Armure SHERIFF',
+        ['weight'] = 5000,
+        ['type'] = 'item',
+        ['image'] = 'armor_SHERIFF.png',
+        ['unique'] = false,
+        ['useable'] = true,
+        ['shouldClose'] = true,
+        ['combinable'] = nil,
+        ['description'] = 'Un peu de protection ne fait pas de mal... non ?'
+    },
+    ['kevlar5'] = {
+        ['name'] = 'kevlar5',
+        ['label'] = 'Armure LSPD',
+        ['weight'] = 5000,
+        ['type'] = 'item',
+        ['image'] = 'armor_lspd.png',
+        ['unique'] = false,
+        ['useable'] = true,
+        ['shouldClose'] = true,
+        ['combinable'] = nil,
+        ['description'] = 'Un peu de protection ne fait pas de mal... non ?'
+    },
