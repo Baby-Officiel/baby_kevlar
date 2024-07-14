@@ -8,7 +8,7 @@ This script allows players to use a kevlar item that applies light armor when us
 
 1. Place the `baby-kevlar` script in the `resources` folder.
 2. Add `ensure baby-kevlar` to your `server.cfg`.
-3. Use the kevlar item (`kevlar1`) in the game. The first use will apply light armor, and the second use will remove the armor.
+3. Use the kevlar item (`kevlar1`) in the game. The first use will apply  armor.
 
 ### Armor Types
 
@@ -43,7 +43,7 @@ Ce script permet aux joueurs d'utiliser un objet kevlar qui applique une armure 
 
 1. Placez le script `baby-kevlar` dans le dossier `resources`.
 2. Mettez `ensure baby-kevlar` dans votre `server.cfg`.
-3. Utilisez l'objet kevlar (`kevlar1`) dans le jeu. La première utilisation appliquera une armure légère et la deuxième utilisation retirera l'armure.
+3. Utilisez l'objet kevlar (`kevlar1`) dans le jeu. La première utilisation appliquera une armure.
 
 ### Types d'Armure
 
